@@ -26,6 +26,7 @@ spec:
       containers:
       - name: axion-ui
         image: acrtodoappjay.azurecr.io/axion-ui:v1
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
 
@@ -42,12 +43,3 @@ spec:
             port: 80
           initialDelaySeconds: 7
           periodSeconds: 10
-
-        volumeMounts:
-        - name: axion-ui-storage
-          mountPath: /data
-      
-      volumes:
-      - name: axion-ui-storage
-        persistentVolumeClaim:
-          claimName: axion-ui-pvc
