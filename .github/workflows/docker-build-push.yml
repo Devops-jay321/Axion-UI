@@ -14,8 +14,8 @@ jobs:
     env:
       IMAGE_NAME: axion-ui
       IMAGE_TAG: v2
-      ACR_NAME: acrtodoappjay
-      ACR_LOGIN_SERVER: acrtodoappjay.azurecr.io
+      ACR_NAME: acraxionppjay
+      ACR_LOGIN_SERVER: acraxionappjay.azurecr.io
 
     steps:
 
